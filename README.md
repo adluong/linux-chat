@@ -7,7 +7,11 @@ The application comprises two programs:
 2. Client.c: Run by multiple clients. They connect and send messages to the server. The server will display messages on a blackboard associated with the sender's name.
 
 To compile:
+
 gcc server.c -o server -lpthread -lncurses
+
 ./server
+
 gcc client-official.c -o client -lpthread -lncurses
+
 ./client
