@@ -316,7 +316,7 @@ int menu(void){
 	wattron(infoWin, COLOR_PAIR(4));
 	mvwprintw(infoWin, 4, maxx/2 - 8, "CHATTING PROJECT");
 	wattroff(infoWin, COLOR_PAIR(4));
-	mvwprintw(infoWin, 5, 11, "Baek Yun Cheol Prof. Students: JeongHyeon, JeongSik, Shawn");
+	mvwprintw(infoWin, 5, 11, "Duc Anh Luong - adluong11@korea.ac.kr");
 	wrefresh(infoWin);
 
 	/***Select menu***/
