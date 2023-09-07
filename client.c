@@ -254,7 +254,7 @@ int menu(void){
 	wattron(infoWin, COLOR_PAIR(3));
 	mvwprintw(infoWin, 4, maxx/2 - 8, "CHATTING PROJECT");
 	wattroff(infoWin, COLOR_PAIR(3));
-	mvwprintw(infoWin, 5, 11, "Baek Yun Cheol Prof. Students: JeongHyeon, Shawn, JeongSik");
+	mvwprintw(infoWin, 5, 11, "Duc Anh Luong - adluong11@korea.ac.kr");
 	wrefresh(infoWin);
 	//-----------------------------------------------------------
 	//infoWin is done, now work with menu
