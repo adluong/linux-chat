@@ -1,6 +1,8 @@
 # linux-chat
 Linux chat test
 
+**Need ncurses to run
+
 A simple chat application for Linux (Ubuntu).
 The application comprises two programs:
 1. Server.c: Must be run first to initialize the protocol (IP address, port number).
