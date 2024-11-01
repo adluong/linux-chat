@@ -1,16 +1,17 @@
 /** chat_client **/
 /*
-*1. The client will create a loop that keeps generating sockets each time it runs.
-*2. Then it requires users to input their name, server port number, and IP address.
-*3. The client will connect to the server through the IP and the port number.
-*4. If connect succeeds, it creates 2 threads, one sends a message and one receives messages,
-*5. 2 threads run parallelly.
-*6. The send-thread creates a loop that keeps reading input and sends it to the socket whereas the receive-thread
-*   runs a loop that keeps reading the socket and displaying it out.
-*7. Both send thread and receive thread will create a window for input purpose and output purposes
-*8. The client will be terminated if 2 threads are terminated.
-*9. The rest of the program is about interface using the ncurses library
+* 1. The client creates a loop that generates a new socket each time it runs.
+* 2. It then prompts the user to input their name, server port number, and IP address.
+* 3. The client connects to the server using the specified IP address and port number.
+* 4. If the connection succeeds, it creates two threads: one to send messages and another to receive messages.
+* 5. The two threads run in parallel.
+* 6. The send thread creates a loop that continuously reads input and sends it to the socket, while the receive thread
+*    runs a loop that continuously reads from the socket and displays the messages.
+* 7. Both the send and receive threads create windows for input and output purposes.
+* 8. The client terminates when both threads are terminated.
+* 9. The remainder of the program handles the interface using the ncurses library.
 */
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
