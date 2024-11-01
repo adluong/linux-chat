@@ -1,5 +1,6 @@
 # linux-chat
-Linux chat test
+This is a simple message exchanging program.
+It runs on Linux terminal using pthread and ncurses library.
 
 **Need ncurses to run
 
@@ -17,3 +18,5 @@ gcc server.c -o server -lpthread -lncurses
 gcc client-official.c -o client -lpthread -lncurses
 
 ./client
+
+**For more information, please contact: adluong11@korea.ac.kr**
